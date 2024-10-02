@@ -57,7 +57,7 @@ echo $BL31
 cd u-boot
 make mrproper
 make CROSS_COMPILE=aarch64-linux-gnu- -j$(nproc) ${boardconfig}
-grep "BROM_BOOTSOURCE_SPINOR_RK3588 = 6" arch/arm/include/asm/arch-rockchip/bootrom.h && patch -p1 < v2-1-4-rockchip-rk3588-Fix-boot-from-SPI-flash.diff
+#grep "BROM_BOOTSOURCE_SPINOR_RK3588 = 6" arch/arm/include/asm/arch-rockchip/bootrom.h && patch -p1 < v2-1-4-rockchip-rk3588-Fix-boot-from-SPI-flash.diff
 make KCFLAGS="-fno-peephole2" CROSS_COMPILE=aarch64-linux-gnu- -j$(nproc) BL31=$BL31 ROCKCHIP_TPL=$ROCKCHIP_TPL
 
 cp u-boot-rockchip-spi.bin $rootdir/out/u-boot-$ubootRef-$boardName-spi.bin
