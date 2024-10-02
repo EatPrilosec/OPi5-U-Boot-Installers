@@ -106,4 +106,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: u-boot-${{ inputs.uboot_ref }}-${{ matrix.boards.name }}-${{ matrix.boards.build }}-${{ inputs.bootorder}}
-          path: ${{ matrix.boards.build }}/out/u-boot-*-spi*.bin
+          path: ${{ matrix.boards.build }}/out/
