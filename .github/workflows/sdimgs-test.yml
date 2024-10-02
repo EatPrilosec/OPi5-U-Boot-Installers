@@ -60,7 +60,7 @@ jobs:
       - name: Checkout Opi5-u-boot-custom
         uses: actions/checkout@v3
         with:
-          repository: ArchemedIan/Opi5-u-boot-custom
+          #repository: ArchemedIan/Opi5-u-boot-custom
           ref: main
           path: .
 
