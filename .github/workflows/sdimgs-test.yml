@@ -23,6 +23,7 @@ on:
         type: choice
         description: u-boot ref
         options: 
+        - v2024.07
         - v2024.01
         - v2023.10
         - master
