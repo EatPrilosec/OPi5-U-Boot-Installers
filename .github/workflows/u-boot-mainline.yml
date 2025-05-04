@@ -50,11 +50,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          path: main
+          path: .
 
       - name: Build "${{ matrix.boards.config }}." variant "${{ matrix.boards.build }}"
         run: |
-          ls
           cd ${{ matrix.boards.build }}
           chmod a+x ./build.sh 
           ./build.sh "${{ inputs.uboot_ref }}" "${{ inputs.uboot_repo }}" "${{ matrix.boards.config }}" "${{ inputs.uboot_ref_custom }}" "${{ inputs.uboot_repo_custom}}"
