@@ -1,4 +1,4 @@
-name: Release sdimgs of u-boot mainline with custom bootorder
+name: old-Release sdimgs of u-boot mainline with custom bootorder
 run-name: ${{ inputs.bootorder}} ${{ inputs.bootorder_custom}}
 on:
   workflow_dispatch:
