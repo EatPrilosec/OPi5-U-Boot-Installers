@@ -1,4 +1,4 @@
-name: Test u-boot mainline with custom bootorder
+name: old-Test u-boot mainline with custom bootorder
 run-name: ${{ inputs.bootorder}}
 on:
   workflow_dispatch:
