@@ -30,7 +30,7 @@ bootorder="${bootorder//emmc/mmc@fe2e0000.bootdev}"
 bootorder="${bootorder//sata/scsi}"
 
 sudo apt-get update
-sudo apt-get install gcc-12 gcc-12-aarch64-linux-gnu python3-pyelftools confget
+sudo apt-get install gcc-12 gcc-12-aarch64-linux-gnu python3-pyelftools confget libgnutls28-dev
 
 sudo ln -sf cpp-12 /usr/bin/cpp
 sudo ln -sf gcc-12 /usr/bin/gcc
