@@ -1,4 +1,4 @@
-name: Build u-boot mainline
+name: Build u-boot mainline-testing
 run-name: Build u-boot mainline
 on:
   workflow_dispatch:
